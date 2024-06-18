@@ -1,0 +1,18 @@
+body{
+    background: rga(233, 236 206);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.text{
+    background: url(pexels-catiamatos-1072179.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: cover;
+    color: transparent;
+    font-size: 5rem;
+    font-weight: 900;
+}
