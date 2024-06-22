@@ -52,8 +52,12 @@ body {
     display: flexbox;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: #333;
     color: #fff;
+}
+.grid-item dark{
+    background-color: #333;
 }
 
 header {
@@ -67,11 +71,11 @@ header {
 .grid-container {
     display: grid;
     flex-direction: column;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 10%;
+    padding: 10px;
     width: 100%;
-    max-width: 1200px;
+    
 }
 
 .grid-item {
@@ -82,7 +86,7 @@ header {
 }
 
 .grid-item a {
-    display: flexbox;
+    display: flex;
     margin-bottom: 0px;
     color: #333;
     text-decoration: none;
@@ -127,4 +131,19 @@ header {
 .wrapper:hover .title{
     opacity: 1;
 
+}
+.title{
+    opacity: 0;
+    border-radius: 5px;
+    background: rgba(219,217,217,0.568);
+    padding: 20px;
+    position: relative;
+    color: rgb(61,59,59);
+    bottom: 80px;
+    left: 4px;
+    font-size: 23px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    transition: opacity 0.5s ease-in-out;
 }
