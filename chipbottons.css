@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(245,214,219);
+    background-color: rgb(243, 164, 132);
     margin:0;
     height: 100vh;
     display: flex;
@@ -50,7 +50,7 @@ body{
 }
 
 .active{
-    animation: fill 0.5s forwards;
+    animation:  3s forwards;
 }
 
 @keyframes fill{

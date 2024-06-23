@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #091540;
+    color:#ffffff;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary{
+    position: relative;
+    padding: 10px 20px;
+    background: hotpink;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    overflow: hidden;
+}
+
+.shape{
+    top:0;
+    position: absolute;
+    background: #ffffff81;
+    width: 30px;
+    height: 100%;
+    clip-path: polygon(50% 0%,100% 0%, 75% 100%,0% 100%);
+    transform: translateX(-170%);
+}
+
+.btn-primary:hover .shape{
+    transform: translateX(400%);
+    transition: transform 1s;
+}
+
+.btn-primary:hover{
+    background: #ff00ff;
+    scale: 1.05;
+    transition: all 0.5s;
+}

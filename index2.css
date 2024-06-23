@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background: #f8e1e1;
+}
+
+.carousel{
+    position: relative;
+    display: flex;
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel img video{
+    position: sticky;
+    left: 0;
+    width: 450px;
+    height: 0 0 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    background: rgba(201,199,199);
+    border-radius: 0 0 15px 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #868585;
+    border-radius: 15px;
+}
