@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Sky Website | M.A Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="navbar">
+            <a href="#" class="logo">
+                LOGO HERE
+            </a>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button>
+                Discover More
+            </button>
+        </div>
+
+       <div class="bottom-sec">
+        <div class="bottom-left">
+            <h1>Experince the night sky</h1>
+            <h3>Unveil the beauty of the moon and stars with our interactive design</h3>
+            <p>Experience the transition from darkness to light as the moon reveals its luminous beauty. Hover over the moon to watch it glow and stars appear, bringing the night sky to life.</p>
+            <form>
+                <input type="email" name="email" placeholder="yourname@xyz.com"/>
+                <button>
+                    Subscribe Now
+                </button>
+            </form>
+        </div>
+
+       <div class="bottom-right">
+         <img src="images/main-img.jpg" alt="" class="main01" id="Main01"/>
+         <img src="images/main2-img.png" alt="" class="main02" id="Main02"/>
+       </div>
+
+       </div>
+
+    </div>
+
+<script>
+
+   document.addEventListener("DOMContentLoaded", function(){
+     const Main02 = document.getElementById("Main02");
+     const Main01 = document.getElementById("Main01");
+
+      Main02.addEventListener("mouseenter", function() {
+        Main01.style.opacity = '1';
+        Main02.style.opacity = '0';
+      });
+
+      Main02.addEventListener("mouseleave", function() {
+        Main01.style.opacity = '0';
+        Main02.style.opacity = '1';
+});
+
+   });
+
+</script>
+
+</body>
+</html>

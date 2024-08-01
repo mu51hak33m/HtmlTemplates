@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+input,button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.main-container {
+    max-width: 1800px;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #0D1B2A;
+    padding: 3rem 0 0 8%;
+}
+
+.navbar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    z-index: 1000;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 18px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.navbar ul a:hover,.navbar ul .active {
+    color: #B0BEC5;
+}
+
+.navbar button,.bottom-left form button {
+    width: 11rem;
+    padding: 15px 0;
+    font-size: 18px;
+    background: linear-gradient(135deg, #6883CD 0%,#6883CD 100%);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.navbar button:hover,.bottom-left form button:hover {
+    background: linear-gradient(135deg, #6A5ACD 0%,#483D8B 100%);
+    transform: translateY(-3px);
+}
+
+.bottom-left form button:hover {
+    transform: translateY(0);
+}
+
+.bottom-sec {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-left {
+    width: 40%;
+}
+
+.bottom-left h1 {
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #F0F8FF;
+    letter-spacing: 1.5px;
+}
+
+.bottom-left h3 {
+    max-width: 480px;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #C0C7D2;
+}
+
+.bottom-left p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #B0BEC5;
+}
+
+.bottom-left form {
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.bottom-left input {
+    padding: 15px 10px 15px 25px;
+    font-size: 18px;
+}
+
+.bottom-left form button {
+    border-radius: 0;
+}
+
+.bottom-right {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main01 {
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.main02 {
+    width: 42.5%;
+    position: absolute;
+    transition: 1s ease;
+}
+
+@media(max-width:1050px) {
+    .main-container {
+        padding: 3rem 0 0 5%;
+    }
+    .navbar {
+        padding: 20px 5%;
+    }
+    .logo {
+        font-size: 25px;
+    }
+    .navbar ul li {
+        margin: 0 12px;
+    }
+    .navbar ul a {
+        font-size: 14px;
+    }
+    .navbar button,.bottom-left form button {
+        width: 9.5rem;
+        padding: 13px 0;
+        font-size: 16px;
+    }
+    .bottom-left h1 {
+        font-size: 45px;
+        line-height: 55px;
+        margin-bottom: 10px;
+    }
+    .bottom-left h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .bottom-left p {
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 40px;
+    }
+    .bottom-left form input {
+        padding: 13px 10px 13px 20px;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:850px) {
+    .main-container {
+        padding: 7rem 5% 2rem 5%;
+    }
+    .navbar ul {
+        display: none;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    .bottom-sec {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bottom-left,.bottom-right {
+        max-width: 500px;
+        width: 100%;
+    }
+    .bottom-right {
+        width: 110%;
+    }
+    .navbar button,.bottom-left form button {
+        width: 8.3rem;
+        padding: 13px 0;
+        font-size: 15px;
+    }
+    .bottom-left h1 {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 10px;
+    }
+    .bottom-left h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .bottom-left p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .bottom-left form input {
+        padding: 12px 10px 12px 18px;
+        font-size: 15px;
+    }
+    .bottom-left form button {
+        width: 7.5rem;
+        font-size: 14px;
+    }
+}
