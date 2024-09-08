@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="passcheckerjs.css">
+<title>Login Checker</title>
+</head>
+<body>
+<input type="password" id="password" placeholder="Please enter the password"/>
+<div class="check-results">
+    <span id="upperCase" class="invalid">
+        <i class="bi bi-shield-x"> </i> Contain Upper letter
+    </span>
+    <span class="invalid" id="lowerCase">
+        <i class="bi bi-shield-x"></i>Contain Lower Letter
+    </span>
+    <span class="invalid" id="number">
+        <i class="bi bi-shield-x"></i>Contain Number
+    </span>
+    <span class="invalid" id="specialChar">
+        <i class="bi bi-shield-x"></i>Contain Special Character
+    </span>
+</div>
+<script src="passcheckerjs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
